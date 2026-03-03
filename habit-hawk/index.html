@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THE HABIT HAWK SYSTEM™</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>🦅 THE HABIT HAWK SYSTEM™</h1>
+  <select id="yearSelector"></select>
+  <button id="exportBtn">Export CSV</button>
+</header>
+
+<section class="controls">
+  <input type="text" id="newHabit" placeholder="Add new habit">
+  <button id="addHabitBtn">Add Habit</button>
+</section>
+
+<section>
+  <h2>Daily Progress</h2>
+  <div class="progress-container">
+    <div id="dailyProgressBar"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Top 10 Habits</h2>
+  <ul id="topHabits"></ul>
+</section>
+
+<section>
+  <h2>Habit Tracker</h2>
+  <div class="table-container">
+    <table id="habitTable"></table>
+  </div>
+</section>
+
+<section>
+  <h2>Analytics</h2>
+  <canvas id="habitChart"></canvas>
+</section>
+
+<script src="utils.js"></script>
+<script src="storage.js"></script>
+<script src="calendar.js"></script>
+<script src="charts.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
