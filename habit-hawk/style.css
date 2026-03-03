@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f1e6;
+  color: #111;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+button {
+  background: black;
+  color: beige;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  padding: 8px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  height: 20px;
+}
+
+#dailyProgressBar {
+  height: 100%;
+  background: black;
+  width: 0%;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 8px;
+  }
+}
